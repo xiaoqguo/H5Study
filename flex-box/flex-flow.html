@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .box{
+            display:-webkit-flex;
+            display:flex;
+            width:220px;margin:0;padding:10px;list-style:none;background-color:#eee;}
+        .box li{width:100px;height:100px;border:1px solid #aaa;text-align:center;}
+        #box{
+            -webkit-flex-flow:row nowrap;
+            flex-flow:row nowrap;
+        }
+        #box2{
+            -webkit-flex-flow:row wrap-reverse;
+            flex-flow:row wrap-reverse;
+        }
+        #box3{
+            height:220px;
+            -webkit-flex-flow:column wrap-reverse;
+            flex-flow:column wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+<h1>flex-flow (适用于父类容器的元素上)</h1>
+<span>复合属性。direction和wrap的综合体。</span></br></br></br>
+<span>flex-flow: <‘flex-direction’> || <‘flex-wrap’></span>
+<ul>
+    <li>[ flex-direction ]：定义弹性盒子元素的排列方向。</li>
+    <li>[ flex-wrap ]：定义弹性盒子元素溢出父容器时是否换行。</li>
+</ul>
+
+<ul id="box" class="box">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ul>
+<h2>flex-flow:row wrap-reverse</h2>
+<ul id="box2" class="box">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ul>
+<h2>flex-flow:column wrap-reverse;</h2>
+<ul id="box3" class="box">
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ul>
+</body>
+</html>
